@@ -1,0 +1,6 @@
+<div class= 'text-center card-bg'>
+<h1> <%= @cocktail.name %> </h1>
+<p> HEEEYYY ! You should add a <%= link_to 'dose !', new_cocktail_dose_path(@cocktail) %> </p>
+
+<p> <%= link_to 'Back to list of cocktails', cocktails_path %> </p>
+</div>

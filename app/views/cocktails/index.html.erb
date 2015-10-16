@@ -1,0 +1,12 @@
+<h1> Nice cocktails, from Mister Cocktail </h1>
+<p> Create a new cocktail <%= link_to 'here !', new_cocktail_path, {class: "btn btn-primary"} %> </p>
+
+
+<div>
+  <% @cocktails.each do |cocktail| %>
+  <span class='card-bg'>
+  <h1> <%= cocktail.name %></h1>
+  </span>
+  <% end %>
+</div>
+
